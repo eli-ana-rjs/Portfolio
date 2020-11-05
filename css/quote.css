@@ -1,0 +1,28 @@
+.section-quote {
+    background-color: var(--rosaViejoOscuro);
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.quote-icon {
+    font-size: 5rem;
+    margin-bottom: 25px;
+}
+
+.fas .fa-quote-right {
+    font-weight: 700;
+}
+
+.quote {
+    font-size: 2rem;
+    max-width: 800px;
+    line-height: 1.5;
+    padding: 40px;
+}
+
+.quote-author {
+    font-size: 1.5em;
+    margin-bottom: 0;
+}

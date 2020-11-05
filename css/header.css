@@ -1,0 +1,84 @@
+header {
+    width: 100%;
+    background-color: black;
+    padding: 25px 30px;
+    box-shadow: 0 0 29px 0 rgba(143, 142, 142, 0.555);
+    position: fixed; /*deja fijo el header*/
+    transition: 0.4s;
+}
+
+/* Menu normal  */
+.header-container {
+    width: 100%;
+    height:88px ;
+    display:none;
+}
+
+.nav-header {
+    background-color:black ;
+}
+
+.nav-menu {
+    margin: 0;
+    display: flex;
+}
+
+.nav-item {
+    margin: 0 10px;
+    font-weight: 700;
+}
+
+
+.nav-link {
+    line-height: 2;
+    color:  rgb(240, 197, 181) ;
+    padding: 0 10px;
+    font-weight: 500;
+    border-radius: 100px;
+}
+
+.nav-link:hover {
+    background-color: rgb(240, 197, 181);
+    color: white;
+    /* -webkit-transition:all .2s ease;  */
+    -webkit-transform:scale(1.1);
+}
+
+.nav-link:focus {
+    box-shadow: 0px 0px 18px rgb(143, 143, 143);
+    outline: 0;
+}
+
+/*el selector es para elementos que tenga las dos clases*/
+.nav-link.contact {
+    background-color: rgb(240, 197, 181);
+    color: black;
+}
+
+.menu {
+    display: flex;
+    justify-content:flex-end ;
+}
+
+/* Menu hamburguesa */
+
+  #menu {
+    display: none;
+} 
+
+/* Media query */
+
+@media (min-width: 830px) {
+    .header-container {
+        display: block;
+    }
+
+   
+
+   }
+
+  
+    
+
+
+ 

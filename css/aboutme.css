@@ -1,0 +1,78 @@
+.aboutme-section {
+    /* background-color:  rgb(245, 235, 231); */
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    text-align: center;
+}
+
+.aboutme-info {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.aboutme-greeting {
+    font-size: 200;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+
+.aboutme-name {
+    margin-top: 0;
+    margin-bottom: 6px;
+    color: rgb(255, 198, 177);
+    font-size: 3.5rem;
+    /* -webkit-text-stroke: 1px black; */
+}
+
+.aboutme-description {
+    color: rgb(15, 3, 3);
+    font-size: medium;
+    margin-bottom: 50px;
+}
+
+.button-projects {
+    background-color:  rgb(240, 197, 181) ;
+    color: black;
+    padding: 15px 40px;
+    border-radius: 100px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.button-projects:hover {
+    background-color:  rgba(252, 201, 183, 0.822) ;
+
+}
+
+.aboutme-image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 50px;
+}
+
+@media (min-width: 830px) {
+    .aboutme-section {
+        flex-direction: row;
+        
+    }
+
+    .aboutme-info {
+   
+        align-items: flex-start;
+        text-align: left;
+    }
+}
+
