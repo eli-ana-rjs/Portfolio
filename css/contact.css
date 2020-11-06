@@ -1,33 +1,56 @@
 .section-contact{
+
+    flex-direction: column;
+    padding: 0 5%;
+    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    padding: 40px 0px;
-    margin: 40px;
-   
+    text-align: center; 
+    /* */
+    /* margin: 40px; */
+
 }
 
 .contact-container {
     width: 100%;
     background-color: #fafafa;
-    border-radius: 15px;
-    border: 1px solid #e0e0e0;
+    /* border-radius: 15px;
+    border: 1px solid #e0e0e0; */
     padding: 80px 0px;
     display: flex;
     flex-direction: column;
     text-align: left;
 }
 
+.contact-title {
+    margin-bottom: 5px;
+}
+
 .text-contact {
     width: 100%;
 }
+
+.section-social {
+   margin-top: 40px;
+   transition: .2s;
+}
+
+.section-social {
+    width: 50%;
+  }
+  
+  .section-social:first-of-type {
+    padding-right: 20px;
+  }
+  
+  
 
 .contact-social-item {
     display: block;
     margin: 5px 0px;
     line-height: 2rem;
-    
+
 }
 
 .contact-social-item a {
@@ -65,6 +88,10 @@
     margin: 0;
 }
 
+.contact-writeme {
+    margin-top: 10px;
+}
+
 input, textarea{
     width: 100%;
     padding: 10px;
@@ -86,15 +113,42 @@ input:focus {
     outline: 0;
 }
 
+.input-name {
+    display: flex;
+    align-items: center;
+    padding: 5px 0px;
+  
+}
+
+.form-control {
+    margin-bottom: 15px;
+    flex-grow: 1;
+    position: relative;
+  }
+
+.input-name .control-form:nth-of-type(1) {
+    margin-right: 10px;
+  }
+  
+  .input-name .control-form:nth-of-type(2) {
+    margin-left: 10px;
+  }
+
 .button {
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
     border-bottom: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgb(240, 205, 193) ;
 }
 
 .button-form {
     width: 25%;
-    font-size: 1.5rem;
+    font-size: 1em;
+    font-weight: 200;
     padding: 10px;
     margin: 15px;
     background-color: rgb(240, 197, 181);

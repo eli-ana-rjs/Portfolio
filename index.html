@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="./css/projects.css">
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/footer.css">
-    <!-- Font Awesome -->
+
+     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <!-- Devicon -->
@@ -76,9 +77,9 @@
         <!-- Inicio sección "Mis habilidades" -->
 
         <section class="section-skills section" id="skills">
-            <article class="skills-container">
+            <article class="skills-container skill-column">
                 <h2 class="skills-title">Mis Conocimientos</h2>
-                <p class="skills-desciption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quaerat
+                <p class="skills-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quaerat
                     dolorum quisquam rerum, blanditiis similique quibusdam quam esse recusandae aliquam laboriosam
                     minima
                     fugiat, commodi tempora ullam nobis, eveniet nesciunt assumenda!</p>
@@ -132,7 +133,7 @@
 
             <blockquote class="container">
                 <!--  <p class="quote"> A little progress each day adds up to big results </p> -->
-                <p>Lo importante es el camino, y en él...¡caer, levantarse, insitir y aprender!</p>
+                <p class="quote-text">Lo importante es el camino, y en él...¡caer, levantarse, insitir y aprender!</p>
             </blockquote>
 
             <h2 class="quote-author container">Someone</h2>
@@ -189,10 +190,10 @@
         </section>
 
         <!-- Inicio sección "Contactame"-->
-        <section class="section-contact" id="contact">
+        <section class="section-contact  id="contact">
             <div class="contact-container">
                 <div class="contact-column">
-                    <h2>Contactame</h2>
+                    <h2 class="contact-title">Contactame</h2>
                     <p class="text-contact">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, enim, beatae illum necessitatibus quo vitae odit asperiores expedita sed facere sunt? Quas cumque vitae optio obcaecati sed quam ratione iure.</p>
                     <ul class="section-social">
                         <li class="contact-social-item">
@@ -225,31 +226,35 @@
 
                 </div>
                 <div class="contact-column formulario">
-                    <h2>Escribime</h2>
+                    <h2 class="contact-writeme">Escribime</h2>
                     <form action="" method="POST">
-                        <div>
-                            <div>
+                        <div class="input-name">
+                            <div class="control-form" >
                                 <label for="name">Nombre *</label>
-                                <input type="text" id="name" placeholder="p.ej.: Lothar" required>
+                                <input type="text" id="name" placeholder="p.ej.: Lothar" aria-label="Nombre" required>
+                                
                             </div>
-                            <div>
+                            <div class="control-form">
                                 <label for="lastname">Apellido *</label>
-                                <input type="text" id="lastname" placeholder="p.ej: Meyer" required>
+                                <input type="text" id="lastname" placeholder="p.ej: Meyer" aria-label="Apellido"  required>
+            
                             </div>
                         </div>
 
                         <div>
                             <label for="email">Email *</label>
-                            <input type="text" id="email" placeholder="lotharMeyer@gmail.com" required>
+                            <input type="text" id="email" placeholder="lotharMeyer@gmail.com" aria-label="Email" required>
+                          
                         </div>
                         <div>
                             <label for="message">Mensaje *</label>
                             <textarea name="mensaje" id="message" cols="30" rows="10"
-                                placeholder="Escriba un mensaje aquí 🖋" required style="resize:none" ></textarea>
+                                placeholder="Escriba un mensaje aquí 🖋" aria-label="Mensaje" required style="resize:none" ></textarea>
+                                
                         </div>
-                        <div>
-                            <button type="submit" class="button-form">Enviar</button>
-                        </div>
+                       
+                            <button type="submit" class="button-form button">Enviar</button>
+                        
 
 
                     </form>
