@@ -30,7 +30,7 @@
 }
 
 .skills-description {
-    line-height: 1.5;
+    /* line-height: 1.5; */
     display: block;
    
 }
@@ -81,9 +81,30 @@
     transition: 0.3s;
 } 
 
-@media (min:width:830px) {
+
+
+@media (min-width: 768px) {
+   
+    .skill {
+
+      width: 200px;
+      height: 200px;
+        padding: 10px;
+        margin: 7px;
+       
+      }
+      .skill-icon {
+        font-size: 4em;
+      }
+
+      .grid-title {
+          font-size: 1.55em;
+      }
+
     .skill-column {
         max-width: 100%;
     }
+
 }
+
 

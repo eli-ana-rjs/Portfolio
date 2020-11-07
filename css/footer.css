@@ -63,5 +63,20 @@ footer ul {
     .footer-nav-menu {
         display: flex;
     }
+}
 
+@media (min-width: 520px) {
+    .footer-nav-menu {
+        font-size: 1.5em;
+    }
+
+    .footer-social-icon {
+        font-size: 1.5rem;
+    }
+
+    .made-in {
+        font-size: 1.5rem;
+    }
+
+    
 }

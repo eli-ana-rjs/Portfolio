@@ -34,3 +34,20 @@
     margin-top: 10px;
     margin-bottom: 0;
 }
+
+@media (min-width:768px) {
+    .quote-icon {
+        margin-bottom: 25px;
+    }
+
+    .quote-text {
+        font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    }
+
+    .quote-author {
+        font-size: 2em;
+        margin-top: 15px;
+    }
+}

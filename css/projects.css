@@ -38,8 +38,9 @@
 }
 
 .section-proyects {
-    padding: 5%;
+    padding: 20% 5%;
     background-color: #F2F2F2;
+   text-align: center;
 }
 
 .project-name {
@@ -52,6 +53,15 @@
     color: #fd9185; 
 }
 
+@media (min-width:768px) {
+    .project {
+        width: calc(100% / 2 - (0.75em * 2));
+        margin: 0.75em;
+}
+    .project-name {
+        font-size: 1.5rem;
+    }
+}
 
 @media (min-width:830px){
     .project {

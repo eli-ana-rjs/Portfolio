@@ -23,6 +23,7 @@
     text-align: left;
 }
 
+
 .contact-title {
     margin-bottom: 5px;
 }
@@ -40,7 +41,7 @@
     width: 50%;
   }
   
-  .section-social:first-of-type {
+.section-social:first-of-type {
     padding-right: 20px;
   }
   
@@ -155,6 +156,33 @@ input:focus {
     border-radius: 20px;
     border: none;
     outline: none;
+}
+
+@media (min-width:768px) {
+    .contact-social-icon.fab, .contact-social-icon.fas {
+        font-size: 2.5rem;
+    }
+
+    .social-name {
+        font-size: 1.6em;
+    }
+
+    label {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5rem;
+    
+    }
+
+    input, textarea {
+        padding: 14px;
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    .button-form {
+        font-size: 1.5em;
+    font-weight: bold
+    }
 }
 
 @media (min-width: 830px)
