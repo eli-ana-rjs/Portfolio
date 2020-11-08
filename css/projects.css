@@ -1,8 +1,4 @@
 .grid {
-    /* display: flex;
-    flex-wrap: wrap;
-    margin-top: 30px;
-    flex-direction: row; */
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -64,8 +60,21 @@
 }
 
 @media (min-width:830px){
-    .project {
-        width: calc(100%/3 - 16px); 
-        height: 20vw; 
+    
+    .project-image {
+        width: auto;
+        max-height: 12vw;
     }
+
+    .project {
+        width: calc(100%/3 - 24px); 
+        height: 22vw;
+        align-items: center; 
+    }
+
+    .section-proyects {
+        padding: 6% 5%;
+    
+    }
+
 }

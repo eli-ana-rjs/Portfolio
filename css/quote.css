@@ -51,3 +51,17 @@
         margin-top: 15px;
     }
 }
+
+@media (min-width:830px) {
+    .section-quote {
+        padding: 5%;
+    }
+
+    .quote-icon {
+        font-size: 3em;
+    }
+
+    .quote-author {
+        font-size: 1.4em;
+    }
+}

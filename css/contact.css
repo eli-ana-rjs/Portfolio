@@ -1,4 +1,4 @@
-.section-contact{
+.section-contact {
 
     flex-direction: column;
     padding: 0 5%;
@@ -6,17 +6,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center; 
-    /* */
-    /* margin: 40px; */
+    text-align: center;
 
 }
 
 .contact-container {
     width: 100%;
     background-color: #fafafa;
-    /* border-radius: 15px;
-    border: 1px solid #e0e0e0; */
     padding: 80px 0px;
     display: flex;
     flex-direction: column;
@@ -33,25 +29,22 @@
 }
 
 .section-social {
-   margin-top: 40px;
-   transition: .2s;
+    margin-top: 40px;
+    transition: .2s;
 }
 
-.section-social {
+/* .section-social {
     width: 50%;
-  }
-  
+  } */
+
 .section-social:first-of-type {
     padding-right: 20px;
-  }
-  
-  
+}
 
 .contact-social-item {
     display: block;
     margin: 5px 0px;
     line-height: 2rem;
-
 }
 
 .contact-social-item a {
@@ -60,25 +53,36 @@
     align-items: center;
 }
 
-.contact-social-icon.fab , .contact-social-icon.fas {
-    font-size: 2rem;
+.contact-social-icon.fab,
+.contact-social-icon.fas {
+    font-size: 1.1rem;
     margin-right: 20px;
     border-radius: 50%;
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
+    padding: 10px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.contact-social-icon:hover {
-    background-color:black;
+.contact-social-item:hover .contact-social-icon {
+    background-color: black;
     color: rgb(240, 241, 245);
 }
 
-.contact-social {
-    display:flex;
+.contact-social-item:hover .contact-link .social-name {
+    color: #fa897d;
+    font-weight: 400;
+}
 
+.contact-social-item:focus {
+    box-shadow: 0px 0px 18px rgb(143, 143, 143);
+    outline: 0;
+}
+
+.contact-social {
+    display: flex;
 }
 
 .contact-column {
@@ -93,17 +97,17 @@
     margin-top: 10px;
 }
 
-input, textarea{
+input,
+textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     margin-top: 7px;
     font-size: 17px;
-    background-color: rgb(240, 241, 245);
+    background-color: rgba(255, 216, 202, 0.76);
     border: none;
-    color: rgb(128, 128, 128);
+    color:  rgb(24, 23, 23);
     border-radius: 8px;
-    border: 3px solid lightgray;
     outline: none;
     resize: none;
     overflow: hidden;
@@ -118,22 +122,22 @@ input:focus {
     display: flex;
     align-items: center;
     padding: 5px 0px;
-  
+
 }
 
 .form-control {
     margin-bottom: 15px;
     flex-grow: 1;
     position: relative;
-  }
+}
 
 .input-name .control-form:nth-of-type(1) {
     margin-right: 10px;
-  }
-  
-  .input-name .control-form:nth-of-type(2) {
+}
+
+.input-name .control-form:nth-of-type(2) {
     margin-left: 10px;
-  }
+}
 
 .button {
     font-family: 'Roboto', sans-serif;
@@ -143,7 +147,7 @@ input:focus {
 }
 
 .button:hover {
-    background-color: rgb(240, 205, 193) ;
+    background-color: rgb(240, 205, 193);
 }
 
 .button-form {
@@ -159,39 +163,78 @@ input:focus {
 }
 
 @media (min-width:768px) {
-    .contact-social-icon.fab, .contact-social-icon.fas {
-        font-size: 2.5rem;
+
+    .contact-social-icon.fab,
+    .contact-social-icon.fas {
+        font-size: 1.8rem;
+        width: 3rem;
+        height: 3rem;
+        padding: 15px 15px;
     }
 
     .social-name {
         font-size: 1.6em;
     }
 
+    .contact-social-item {
+        margin-bottom: 30px;
+    }
+
     label {
         font-family: 'Roboto', sans-serif;
         font-size: 1.5rem;
-    
+
     }
 
-    input, textarea {
+    input,
+    textarea {
         padding: 14px;
         font-size: 20px;
         margin-top: 15px;
     }
 
     .button-form {
+        width: 20%;
         font-size: 1.5em;
-    font-weight: bold
+        font-weight: bold
     }
 }
 
-@media (min-width: 830px)
-{
+@media (min-width: 770px) {
+
     .contact-container {
+        border-radius: 15px;
+        border: 1px solid #e0e0e0;
         flex-direction: row;
+        background-color: #F2F2F2;
+        padding: 80px 60px;
     }
+
     .contact-column {
         width: 50%;
     }
 
+    .section-contact {
+        padding: 150px 40px;
+    }
+
+    .button-form {
+        width: 35%;
+    }
+
+    .contact-writeme {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .contact-title {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width:830px) {
+    .section-contact {
+        max-width: 1200px;
+        margin: auto;
+    }
 }

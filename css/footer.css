@@ -59,24 +59,24 @@ footer ul {
     font-size: 1.5em;
 }
 
-@media (min-width: 520px) {
+@media (min-width: 768px) {
     .footer-nav-menu {
         display: flex;
-    }
-}
-
-@media (min-width: 520px) {
-    .footer-nav-menu {
         font-size: 1.5em;
+        font-weight: 400;
     }
 
+    .footer-social-link {
+        font-size: 1.9rem;
+        width: 3.2rem;
+        height: 3.2rem;
+    }
     .footer-social-icon {
         font-size: 1.5rem;
     }
 
     .made-in {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
+        margin-bottom: 10px;
     }
-
-    
 }
