@@ -1,85 +1,135 @@
-header {
-    width: 100%;
-    background-color: black;
-    padding: 25px 30px;
-    box-shadow: 0 0 29px 0 rgba(143, 142, 142, 0.555);
-    position: fixed; /*deja fijo el header*/
-    z-index: 1;
-    transition: 0.4s;
-}
 
-/* Menu normal  */
-.header-container {
-    width: 100%;
-    height:88px ;
-    display:none;
-}
-
-.nav-header {
-    background-color:black ;
-}
-
-.nav-menu {
+.menu {
     margin: 0;
-    display: flex;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    margin: 3px;
 }
 
 .nav-item {
-    margin: 0 10px;
-    font-weight: 700;
+    padding: 2%;
+    /* border-top: 1px solid rgba(255, 255, 255, 0.801); */
 }
 
-
-.nav-link {
-    line-height: 2;
-    color:  rgb(240, 197, 181) ;
-    padding: 0 10px;
-    font-weight: 500;
-    border-radius: 100px;
+.nav-item:hover {
+    background-color: #fafafa;
 }
 
-.nav-link:hover {
-    background-color: rgb(240, 197, 181);
-    color: white;
-    /* -webkit-transition:all .2s ease;  */
-    -webkit-transform:scale(1.1);
+.nav-menu {
+    list-style:none;
+    padding: 0;
+    margin: 0;
 }
 
-.nav-link:focus {
-    box-shadow: 0px 0px 18px rgb(143, 143, 143);
-    outline: 0;
+.nav-header {
+    margin-top: -100%;
+    transition: margin-top .5s ease-in-out;
+
 }
 
-/*el selector es para elementos que tenga las dos clases*/
-.nav-link.contact {
-    background-color: rgb(240, 197, 181);
-    color: black;
+#btn-menu:checked + .nav-header {
+
+    margin-top: 0;
 }
 
-.menu {
-    display: flex;
-    justify-content:flex-end ;
-}
-
-/* Menu hamburguesa */
-
-  #menu {
+#btn-menu {
     display: none;
-} 
+}
 
-/* Media query */
+.burguer {
+    width: fit-content;
+    margin: 10px;
+    padding: 8px;
+    display: inline-block;
+    cursor: pointer;
+}
 
-@media (min-width: 830px) {
-    .header-container {
-        display: block;
+@media (min-width:768px) {
+
+    .burguer {
+        display: none;
     }
 
-   
-
-   }
-
-  
+    .header-container {
+        width: 100%;
+        /* height:88px ; */
     
+    }
+
+    header {
+        width: 100%;
+        background-color: black;
+        padding: 15px 20px;
+        box-shadow: 0 0 29px 0 rgba(143, 142, 142, 0.555);
+        position: fixed; 
+        z-index: 1;
+        transition: 0.4s;
+    }
+
+    .nav-header {
+        margin-top: 0;
+    }
 
 
- 
+    .nav-menu {
+        margin: 0;
+        padding-right: 90px;
+        display: flex;
+    }
+    .nav-item {
+        /* margin: 0 10px; */
+        border-bottom: 0;
+    }
+
+    .nav-item:hover {
+        background-color: transparent;
+    }
+
+
+    .nav-link {
+        line-height: 2;
+        /* color:  rgb(240, 197, 181) ; */
+        padding: 5px 10px;
+        font-weight: 700;
+        color: white;
+        border: 1px solid transparent;
+        border-radius: 100px;
+    }
+
+    .nav-link:hover {
+        border-color: white;
+        /* -webkit-transition:all .2s ease;  */
+        /* -webkit-transform:scale(1.1); */
+    }
+
+    .nav-link:focus {
+        box-shadow: 0px 0px 18px rgb(143, 143, 143);
+        outline: 0;
+    }
+
+    /*el selector es para elementos que tenga las dos clases*/
+    .nav-link.contact {
+        background-color: rgb(240, 197, 181);
+        color: black;
+    }
+
+    .menu {
+        display: flex;
+        justify-content:flex-end ;
+    }
+}
+
+
+
+
+
+
+
+
