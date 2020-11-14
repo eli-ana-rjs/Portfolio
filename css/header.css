@@ -9,7 +9,7 @@
     font-weight: 400;
     text-decoration: none;
     padding: 10px;
-    color: black;
+    color: var(--black);
     margin: 3px;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .nav-item:hover {
-    background-color: #fafafa;
+    background-color: var(--light-grey);
 }
 
 .nav-menu {
@@ -51,7 +51,7 @@
     cursor: pointer;
 }
 
-@media (min-width:768px) {
+@media (min-width:830px) {
 
     .burguer {
         display: none;
@@ -65,9 +65,9 @@
 
     header {
         width: 100%;
-        background-color: black;
+        background-color: var(--black);
         padding: 15px 20px;
-        box-shadow: 0 0 29px 0 rgba(143, 142, 142, 0.555);
+        box-shadow: 0 0 29px 0 var(--dark-grey);
         position: fixed; 
         z-index: 1;
         transition: 0.4s;
@@ -98,26 +98,26 @@
         /* color:  rgb(240, 197, 181) ; */
         padding: 5px 10px;
         font-weight: 700;
-        color: white;
+        color: var(--white);
         border: 1px solid transparent;
         border-radius: 100px;
     }
 
     .nav-link:hover {
-        border-color: white;
+        border-color: var(--white);
         /* -webkit-transition:all .2s ease;  */
         /* -webkit-transform:scale(1.1); */
     }
 
     .nav-link:focus {
-        box-shadow: 0px 0px 18px rgb(143, 143, 143);
+        box-shadow: 0px 0px 18px var(--dark-grey);
         outline: 0;
     }
 
     /*el selector es para elementos que tenga las dos clases*/
     .nav-link.contact {
-        background-color: rgb(240, 197, 181);
-        color: black;
+        background-color: var(--old-pink);
+        color: var(--black);
     }
 
     .menu {

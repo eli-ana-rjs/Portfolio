@@ -1,5 +1,5 @@
 .aboutme-section {
-    background-color: white;
+    background-color: var(--white);
     max-width: 1200px;
     min-height: calc(100vh - 90px);
     margin-top: 90px;
@@ -32,18 +32,17 @@
 .aboutme-name {
     font-family: 'Pacifico', cursive;
     font-size: 3em;
-    color: #fd9185;
-    text-shadow: 5px 5px #464353;
+    text-shadow: 5px 5px var(--dark-grey);
     margin-top: 0;
     margin-bottom: 6px;
-    color: rgb(255, 198, 177);
+    color: var(--flamingo) ; 
     font-size: 2.813rem;
     /* -webkit-text-stroke: 1px black; */
 }
 
 .button-projects {
-    background-color: rgb(240, 197, 181);
-    color: black;
+    background-color: var(--old-pink);
+    color: var(--black);
     padding: 15px 25px;
     border-radius: 100px;
     font-weight: 700;
@@ -54,7 +53,7 @@
 }
 
 .button-projects:hover {
-    background-color: rgba(252, 201, 183, 0.822);
+    background-color: var(--old-pink-light);
 
 }
 

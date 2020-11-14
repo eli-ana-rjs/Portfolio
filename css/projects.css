@@ -10,15 +10,13 @@
     width: 100%;
 }
 
-
-.project {
-    
+.project { 
     width: 100%;
     margin: 0;
-    background-color: white;
+    background-color: var(--white);
     margin-bottom: 1.25em;
     padding: 1.25em;
-    border: 1px solid rgba(136, 135, 135, 0.705);
+    border: 1px solid var(--dark-grey);
     border-radius: 10px;
     overflow: hidden;
     display: flex;
@@ -35,18 +33,18 @@
 
 .section-proyects {
     padding: 20% 5%;
-    background-color: #F2F2F2;
+    background-color: var(--grey) ;
    text-align: center;
 }
 
 .project-name {
     font-size: 1rem;
-    color: black;
+    color: var(--black);
 }
 
 .project:hover {
-    border: 1px solid #FFA096;
-    color: #fd9185; 
+    border: 1px solid var(--flamingo);
+    color: var(--salmon); 
 }
 
 @media (min-width:768px) {
@@ -76,5 +74,4 @@
         padding: 6% 5%;
     
     }
-
 }

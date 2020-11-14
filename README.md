@@ -18,8 +18,6 @@
 
 ## Comenzando 💻
 
-***
-
 <br />
 
 ### Ya te he contado de que trata el proyecto! A continuación te invito a ver mi portfolio. 😀
@@ -29,7 +27,6 @@
 <br />
 
 ## Crea una copia de mi repositorio 📝
-***
 
 <br />
 
@@ -49,8 +46,6 @@
 
 ## Pre-requisitos 🔧
 
-***
-
 <br />
 
 ### Este proyecto no necesita la instalación de ninguna dependencia, por ahora! 
@@ -58,7 +53,6 @@
 <br />
 
 ## Vista previa del proyecto 🖌
-***
 
 <br />
 
@@ -74,8 +68,6 @@
 
 
 ## Expresiones de Gratitud 🎁
-
-***
 
 <br />
 

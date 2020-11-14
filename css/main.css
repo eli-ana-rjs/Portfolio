@@ -1,3 +1,5 @@
+/* Layout */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,11 +11,6 @@ main {
     margin:0 auto; 
 }
 
-:root {
-    --rosaViejo : rgb(240, 197, 181) ;
-    --rosaViejoOscuro: #f1c4a3;
-}
-
 html, body {
     height: 100%;
 }
@@ -23,40 +20,6 @@ body {
     width: 100%;
 }
 
-.section-title {
-    font-family: 'Baloo Chettan 2', cursive;
-    font-size: 2em;
-    font-weight: 700;
-    margin-bottom: 12px;
-    
-}
-
-.section-description {
-    color: rgb(24, 23, 23);
-    margin-bottom: 50px;
-    line-height: 1.5em;
-    font-size: 1.2rem;
-}
-/*revisar a acá en adelante*/
-
-/* nav ul li a {
-    text-transform: uppercase;
-    font-size: 1em;
-    font-weight: 400;
-    text-decoration: none;
-    padding: 10px;
-    color: black;
-    float: right; 
-    margin: 3px;
-} */
-
-/* ul li {
-    display: inline;
-} */
-
-a {
-    text-decoration: none;
-}
 .section {
     display: flex;
     justify-content: center;
@@ -73,6 +36,49 @@ a {
     margin: auto;
 }
 
+/* Variables CSS */
+
+:root {
+    --old-pink: rgb(240, 197, 181) ;
+    --coin:  rgba(255, 216, 202, 0.76);
+    --old-pink-light: rgba(252, 201, 183, 0.822); 
+    --baby-pink: #f1c4a3;
+    --flamingo: rgb(255, 198, 177);
+    --salmon: #fd9185;
+    --white: white;
+    --light-grey: #fafafa;
+    --border-grey: #e0e0e0;
+    --cloud-grey : #F2F2F2;
+    --grey: #F2F2F2;
+    --dark-grey:  rgba(143, 142, 142, 0.555); 
+    --iron-grey: rgb(24, 23, 23);
+    --black: rgb(0,0,0);
+}
+
+
+/* Estilos generales */
+
+.section-title {
+    font-family: 'Baloo Chettan 2', cursive;
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 12px;
+    
+}
+
+.section-description {
+    color: var(--iron-grey);
+    margin-bottom: 50px;
+    line-height: 1.5em;
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Media query para el formato tablet */
+
 @media (min-width: 768px) {
     .section-title {
         font-size: 3em;
@@ -85,6 +91,8 @@ a {
     }
    
 }
+
+/* Media query para el formato escritorio */
 
 @media (min-width:830px) {
     .section-title {

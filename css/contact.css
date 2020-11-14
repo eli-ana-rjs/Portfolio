@@ -1,3 +1,5 @@
+/* Social network */
+
 .section-contact {
 
     flex-direction: column;
@@ -12,13 +14,12 @@
 
 .contact-container {
     width: 100%;
-    background-color: #fafafa;
+    /* background-color: var(--light-grey); */
     padding: 80px 0px;
     display: flex;
     flex-direction: column;
     text-align: left;
 }
-
 
 .contact-title {
     margin-bottom: 5px;
@@ -33,10 +34,6 @@
     transition: .2s;
 }
 
-/* .section-social {
-    width: 50%;
-  } */
-
 .section-social:first-of-type {
     padding-right: 20px;
 }
@@ -48,7 +45,7 @@
 }
 
 .contact-social-item a {
-    color: black;
+    color: var(--black);
     display: flex;
     align-items: center;
 }
@@ -67,23 +64,24 @@
 }
 
 .contact-social-item:hover .contact-social-icon {
-    background-color: black;
+    background-color: var(--black);
     color: rgb(240, 241, 245);
 }
 
 .contact-social-item:hover .contact-link .social-name {
-    color: #fa897d;
+    color: var(--flamingo);
     font-weight: 400;
 }
 
 .contact-social-item:focus {
-    box-shadow: 0px 0px 18px rgb(143, 143, 143);
+    box-shadow: 0px 0px 18px var(--dark-grey);
     outline: 0;
 }
 
 .contact-social {
     display: flex;
 }
+/* Write me section   */
 
 .contact-column {
     margin-right: 45px;
@@ -104,9 +102,9 @@ textarea {
     margin-bottom: 15px;
     margin-top: 7px;
     font-size: 17px;
-    background-color: rgba(255, 216, 202, 0.76);
+    background-color: var(--coin);
     border: none;
-    color:  rgb(24, 23, 23);
+    color: var(--iron-grey);
     border-radius: 8px;
     outline: none;
     resize: none;
@@ -114,7 +112,7 @@ textarea {
 }
 
 input:focus {
-    box-shadow: 0px 0px 7px tomato;
+    box-shadow: 0px 0px 7px var(--salmon);
     outline: 0;
 }
 
@@ -147,7 +145,7 @@ input:focus {
 }
 
 .button:hover {
-    background-color: rgb(240, 205, 193);
+    background-color: var(--old-pink-light);
 }
 
 .button-form {
@@ -156,7 +154,7 @@ input:focus {
     font-weight: 200;
     padding: 10px;
     margin: 15px;
-    background-color: rgb(240, 197, 181);
+    background-color: var(--old-pink);
     border-radius: 20px;
     border: none;
     outline: none;
@@ -204,9 +202,8 @@ input:focus {
 
     .contact-container {
         border-radius: 15px;
-        border: 1px solid #e0e0e0;
+        border: 1px solid var(--border-grey);
         flex-direction: row;
-        background-color: #F2F2F2;
         padding: 80px 60px;
     }
 
