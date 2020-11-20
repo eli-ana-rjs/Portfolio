@@ -1,6 +1,6 @@
 .section-skills {
     padding: 80px 20px;
-    background-color:var(--cloud-grey);
+    background-color: var(--cloud-grey);
 }
 
 .skills-container {
@@ -56,7 +56,7 @@
 }
 
 .grid-item {
-    background-color:var(--light-grey);
+    background-color: var(--light-grey);
 }
 
 .grid-title {
@@ -106,6 +106,7 @@
     .skills-container {
         max-width: 1000px;
     }
+
     .grid {
         flex-flow: row wrap;
         height: auto;

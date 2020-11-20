@@ -10,7 +10,7 @@
     width: 100%;
 }
 
-.project { 
+.project {
     width: 100%;
     margin: 0;
     background-color: var(--white);
@@ -28,13 +28,16 @@
 .project-image {
     width: 100%;
     display: block;
-   
+}
+
+.img-portfolio {
+    width: 50%;
 }
 
 .section-proyects {
     padding: 20% 5%;
-    background-color: var(--grey) ;
-   text-align: center;
+    background-color: var(--grey);
+    text-align: center;
 }
 
 .project-name {
@@ -44,34 +47,35 @@
 
 .project:hover {
     border: 1px solid var(--flamingo);
-    color: var(--salmon); 
+    color: var(--salmon);
 }
 
 @media (min-width:768px) {
     .project {
         width: calc(100% / 2 - (0.75em * 2));
         margin: 0.75em;
-}
+    }
+
     .project-name {
         font-size: 1.5rem;
     }
 }
 
-@media (min-width:830px){
-    
+@media (min-width:830px) {
+
     .project-image {
         width: auto;
         max-height: 12vw;
     }
 
     .project {
-        width: calc(100%/3 - 24px); 
+        width: calc(100%/3 - 24px);
         height: 22vw;
-        align-items: center; 
+        align-items: center;
     }
 
     .section-proyects {
         padding: 6% 5%;
-    
+
     }
 }

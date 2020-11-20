@@ -7,11 +7,12 @@
 }
 
 main {
-    width:100%; 
-    margin:0 auto; 
+    width: 100%;
+    margin: 0 auto;
 }
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -39,20 +40,20 @@ body {
 /* Variables CSS */
 
 :root {
-    --old-pink: rgb(240, 197, 181) ;
-    --coin:  rgba(255, 216, 202, 0.76);
-    --old-pink-light: rgba(252, 201, 183, 0.822); 
+    --old-pink: rgb(240, 197, 181);
+    --coin: rgba(255, 216, 202, 0.76);
+    --old-pink-light: rgba(252, 201, 183, 0.822);
     --baby-pink: #f1c4a3;
     --flamingo: rgb(255, 198, 177);
     --salmon: #fd9185;
     --white: white;
     --light-grey: #fafafa;
     --border-grey: #e0e0e0;
-    --cloud-grey : #F2F2F2;
+    --cloud-grey: #F2F2F2;
     --grey: #F2F2F2;
-    --dark-grey:  rgba(143, 142, 142, 0.555); 
+    --dark-grey: rgba(143, 142, 142, 0.555);
     --iron-grey: rgb(24, 23, 23);
-    --black: rgb(0,0,0);
+    --black: rgb(0, 0, 0);
 }
 
 
@@ -63,7 +64,7 @@ body {
     font-size: 2em;
     font-weight: 700;
     margin-bottom: 12px;
-    
+
 }
 
 .section-description {
@@ -89,7 +90,7 @@ a {
         line-height: 1.8em;
         font-size: 1.75rem;
     }
-   
+
 }
 
 /* Media query para el formato escritorio */
@@ -100,7 +101,7 @@ a {
         margin-bottom: 0.7em;
     }
 
-   .section-description {
+    .section-description {
         line-height: 1.6em;
         font-size: 1.5rem;
         margin-bottom: 40px;
