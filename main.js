@@ -10,6 +10,11 @@ arrayNodes.forEach(function (node) {
         burguer.click();
     });
 });
-// Modo oscuro
 
-// Vaciar el dormulario 
+// Modo oscuro - En proceso 
+
+// Limpiar el dormulario - Esta función se encarga de reiniciar el formulario de contacto - La página se recarga 
+
+function limpiarFormulario() {
+    document.getElementById("miForm").reset();
+  }

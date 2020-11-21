@@ -45,10 +45,23 @@
     color: var(--black);
 }
 
-.project:hover {
-    border: 1px solid var(--flamingo);
+.project-item {
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+    
+}
+
+.project-item:hover  {
+    border-style: solid;
+    border-color: #95A5A6;
+    border-color: #000;
+   
+}
+
+.project-item:hover .project-name {
     color: var(--salmon);
 }
+
 
 @media (min-width:768px) {
     .project {

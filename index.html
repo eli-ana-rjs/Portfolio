@@ -25,8 +25,7 @@
         content="https://github.com/elianarojas/Portfolio/blob/master/img/img-mi-proyecto.png?raw=true">
     <meta property="og:image:width" content="1100" />
     <meta property="og:image:height" content="600" /> -->
-    <meta property="og:image"
-        content="https://github.com/elianarojas/Portfolio/blob/master/img/aboutme.png?raw=true">
+    <meta property="og:image" content="https://github.com/elianarojas/Portfolio/blob/master/img/aboutme.png?raw=true">
     <!-- Ver si esto va o no, lo pase por depurador de facebook y me decia que faltaba eso  -->
     <meta property="fb:app_id" content="APPID" />
 
@@ -82,10 +81,11 @@
         <header>
             <section class="menu">
 
-                <label for="btn-menu" class="burguer">
-                    <i class="fas fa-bars"></i>
+                <label for="btn-menu" class="burguer" aria-label="Abrir menu">
+                    <i class="fas fa-bars burguer-open"></i>
+                    <i class="fas fa-times burguer-close"></i>
                 </label>
-                <input type="checkbox" id="btn-menu" />
+                <input type="checkbox" id="btn-menu" aria-hidden="true" />
                 <nav class="nav-header menu-burguer ">
 
                     <!-- Comienzo del Menú de Navegación -->
@@ -110,8 +110,10 @@
             <article class="aboutme-info">
                 <p class="aboutme-greeting">¡Hola! Soy </p>
                 <h1 class="aboutme-name">Eliana Anabella Rojas </h1>
-                <p class="aboutme-description section-description" > Amo a mi perrito Lothar <span aria-hidden="true">🐶</span>  , soy técnica de laboratorio
-                    en Análisis Clínicos <span aria-hidden="true">💉</span> y Programadora <span aria-hidden="true">💗</span> 
+                <p class="aboutme-description section-description"> Amo a mi perrito Lothar <span
+                        aria-hidden="true">🐶</span> , soy técnica de laboratorio
+                    en Análisis Clínicos <span aria-hidden="true">💉</span> y Programadora <span
+                        aria-hidden="true">💗</span>
                 </p>
                 <a href="#projects" class="button-projects">Lo que hago</a>
             </article>
@@ -201,41 +203,56 @@
                     Te presento los proyectos que he desarrollado hasta el momento.
                 </p>
                 <div class="grid projects">
-                    <a href="#" target="_blank" class="project">
+                    <a href="#" target="_blank" class="project project-item">
                         <!-- Esta imagen a partir de 1125px se me deforma - La cambie por la imagen del aboutme -->
                         <!-- <img src="./img/img-mi-proyecto.png" alt="Portfolio" class="project-image"> -->
+
                         <img src="./img/aboutme.png" alt="Portfolio" class="project-image">
                         <p class="project-name" aria-hidden="true">Portfolio</p>
+
                     </a>
 
-                    <a href="#" target="_blank" class="project">
-                        <img src="./img/generador-de-memes.png" alt="Generador de memes" class="project-image">
+                    <a href="#" target="_blank" class="project project-item">
+                        <figure>
+                            <img src="./img/generador-de-memes.png" alt="Generador de memes" class="project-image">
+                        </figure>
                         <p class="project-name" aria-hidden="true">Generador de memes</p>
                     </a>
 
-                    <a href="#" target="_blank" class="project">
-                        <img src="./img/match-3.png" alt="Juego Match 3" class="project-image">
+                    <a href="#" target="_blank" class="project project-item">
+                        <figure>
+                            <img src="./img/match-3.png" alt="Juego Match 3" class="project-image">
+                        </figure>
                         <p class="project-name" aria-hidden="true">Match 3</p>
                     </a>
 
-                    <a href="#" target="_blank" class="project">
-                        <img src="./img/controlador-de-gastos.png" alt="Controlador de gastos" class="project-image">
+                    <a href="#" target="_blank" class="project project-item">
+                        <figure>
+                            <img src="./img/controlador-de-gastos.png" alt="Controlador de gastos"
+                                class="project-image">
+                        </figure>
                         <p class="project-name" aria-hidden="true">Controlador de gastos</p>
                     </a>
 
-                    <a href="#" target="_blank" class="project">
-                        <img src="./img/administrador-de-reuniones.png" alt="Administrador de reuniones"
-                            class="project-image">
+                    <a href="#" target="_blank" class="project project-item">
+                        <figure>
+                            <img src="./img/administrador-de-reuniones.png" alt="Administrador de reuniones"
+                                class="project-image">
+                        </figure>
                         <p class="project-name" aria-hidden="true">Administrador de reuniones</p>
                     </a>
 
-                    <a href="#" target="_blank" class="project">
-                        <img src="./img/to-do-list.png" alt="Todo app" class="project-image">
+                    <a href="#" target="_blank" class="project project-item">
+                        <figure>
+                            <img src="./img/to-do-list.png" alt="Todo app" class="project-image">
+                        </figure>
                         <p class="project-name" aria-hidden="true">Todo app</p>
                     </a>
 
-                    <a href="#" target="_blank" class="project">
-                        <img src="./img/buscador-de-pelis.png" alt="Buscador de películas" class="project-image">
+                    <a href="#" target="_blank" class="project project-item">
+                        <figure>
+                            <img src="./img/buscador-de-pelis.png" alt="Buscador de películas" class="project-image">
+                        </figure>
                         <p class="project-name" aria-hidden="true">Buscador de películas</p>
                     </a>
                 </div>
@@ -247,9 +264,9 @@
         <!-- ############################################################-->
 
         <!-- #################### Inicio sección "Contactame" #################### -->
-        <section class="section-contact" id="contact" >
+        <section class="section-contact" id="contact">
             <div class="contact-container">
-                <div class="contact-column" >
+                <div class="contact-column">
 
                     <h2 class="section-title contact-title">Contactame</h2>
                     <p class="section-description text-contact"> ¡ Empecemos un proyecto juntos, no dudes en <em>
@@ -284,7 +301,8 @@
                             <a href="mailto:elianabellarojas@gmail.com?Asunto=Me%20contacto%20porque%20vi%20tu%20portfolio"
                                 target="_blank" class="contact-link">
                                 <i class="fas fa-envelope contact-social-icon" aria-hidden="true"></i>
-                                <span class="social-name" aria-label="Enviar a Eli un correo electrónico">elianabellarojas@gmail.com</span>
+                                <span class="social-name"
+                                    aria-label="Enviar a Eli un correo electrónico">elianabellarojas@gmail.com</span>
 
                             </a>
                         </li>
@@ -299,13 +317,20 @@
                 <div class="contact-column formulario" aria-label="Formulario de contacto">
 
                     <h2 class="section-title contact-writeme">Escribime</h2>
-                    <form action="" method="POST">
+                    <form method="POST" id="miForm">
                         <div class="input-name">
                             <div class="control-form">
                                 <label for="name" aria-hidden="true">Nombre *</label>
                                 <div class="input-wrapper">
-                                    <input type="text" id="name" placeholder="Por ejemplo: Lothar" aria-label="Ingresa tu nombre"
-                                        required>
+                                    <input 
+                                        type="text" 
+                                        id="name" 
+                                        placeholder="Por ejemplo: Lothar"
+                                        aria-label="Ingresa tu nombre, mínimo 3 caracteres" 
+                                        required 
+                                        minlength="3"
+                                        maxlength="15"
+                                        class="input-form">
                                     <i class="far fa-times-circle icon-invalid form-icon" aria-hidden="true"></i>
                                     <i class="far fa-check-circle icon-valid form-icon" aria-hidden="true"></i>
                                 </div>
@@ -313,7 +338,13 @@
                             <div class="control-form">
                                 <label for="lastname" aria-hidden="true">Apellido *</label>
                                 <div class="input-wrapper">
-                                    <input type="text" id="lastname" placeholder="Por ejemplo: Meyer" aria-label="Ingresa tu apellido"
+                                    <input 
+                                        type="text" 
+                                        id="lastname" 
+                                        placeholder="Por ejemplo: Meyer"
+                                        minlength="3"
+                                        maxlength="15"
+                                        aria-label="Ingresa tu apellido, mínimo 3 caracteres" 
                                         required>
                                     <i class="far fa-times-circle icon-invalid form-icon" aria-hidden="true"></i>
                                     <i class="far fa-check-circle icon-valid form-icon" aria-hidden="true"></i>
@@ -324,7 +355,11 @@
                         <div>
                             <label for="email" aria-hidden="true">Email *</label>
                             <div class="input-wrapper">
-                                <input type="text" id="email" placeholder="Ejemplo: lotharMeyer@gmail.com" aria-label="Ingresa tu correo electrónico"
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    placeholder="Ejemplo: lotharMeyer@gmail.com"
+                                    aria-label="Ingresa tu correo electrónico" 
                                     required>
                                 <i class="far fa-times-circle icon-invalid form-icon" aria-hidden="true"></i>
                                 <i class="far fa-check-circle icon-valid form-icon" aria-hidden="true"></i>
@@ -333,8 +368,14 @@
                         <div>
                             <label for="message" aria-hidden="true">Mensaje *</label>
                             <div class="input-wrapper">
-                                <textarea name="mensaje" id="message" cols="30" rows="10"
-                                    placeholder="Escriba un mensaje aquí 🖋" aria-label="Escribime un mensaje" required
+                                <textarea 
+                                    name="mensaje" 
+                                    id="message" 
+                                    cols="30" 
+                                    rows="10"
+                                    minlength="10"
+                                    maxlength="200"
+                                    placeholder="Escriba un mensaje aquí 🖋" aria-label="Escribime un mensaje, minimo 10 caracteres" required
                                     style="resize:none"></textarea>
                                 <i class="far fa-times-circle icon-invalid form-icon" aria-hidden="true"></i>
                                 <i class="far fa-check-circle icon-valid form-icon" aria-hidden="true"></i>
@@ -353,17 +394,22 @@
         <!-- #################### Inicio del Footer #################### -->
         <footer>
             <nav>
-                <ul class="footer-nav-menu" >
-                    <li class="footer-nav-items"><a href="#about-me" class="name-item" aria-label="Ir a sección de presentación" >Hola</a></li>
-                    <li class="footer-nav-items"><a href="#skills" class="name-item" aria-label="Ir a sección de conocimientos">Conocimientos</a></li>
-                    <li class="footer-nav-items"><a href="#projects" class="name-item" aria-label="Ir a sección de proyectos">Proyectos</a></li>
-                    <li class="footer-nav-items"><a href="#contact" class="name-item" aria-label="Ir a sección de contacto">Contacto</a></li>
+                <ul class="footer-nav-menu">
+                    <li class="footer-nav-items"><a href="#about-me" class="name-item"
+                            aria-label="Ir a sección de presentación">Hola</a></li>
+                    <li class="footer-nav-items"><a href="#skills" class="name-item"
+                            aria-label="Ir a sección de conocimientos">Conocimientos</a></li>
+                    <li class="footer-nav-items"><a href="#projects" class="name-item"
+                            aria-label="Ir a sección de proyectos">Proyectos</a></li>
+                    <li class="footer-nav-items"><a href="#contact" class="name-item"
+                            aria-label="Ir a sección de contacto">Contacto</a></li>
                 </ul>
             </nav>
 
             <ul class="social-items">
                 <li class="footer-social-items">
-                    <a href="https://github.com/elianarojas" target="_blank" class="footer-social-link" aria-label="Ir a gitHub">
+                    <a href="https://github.com/elianarojas" target="_blank" class="footer-social-link"
+                        aria-label="Ir a gitHub">
                         <i class="fab fa-github footer.social.icon" aria-hidden="true"></i>
                     </a>
                 </li>
@@ -375,7 +421,8 @@
                     </a>
                 </li>
                 <li class="footer-social-items">
-                    <a href="https://www.instagram.com/anabeyyya/" target="_blank" class="footer-social-link" aria-label="Ir a instagram">
+                    <a href="https://www.instagram.com/anabeyyya/" target="_blank" class="footer-social-link"
+                        aria-label="Ir a instagram">
                         <i class="fab fa-instagram footer.social.icon" aria-hidden="true"></i>
                     </a>
                 </li>
@@ -388,7 +435,7 @@
                 </li>
             </ul>
 
-            <h3 class="made-in"> Hecho con <span class="heart" aria-label="amor" >❤</span>  por Ely </h3>
+            <h3 class="made-in"> Hecho con <span class="heart" aria-label="amor">❤</span> por Ely </h3>
 
         </footer>
         <!-- #################### Fin del Footer #################### -->

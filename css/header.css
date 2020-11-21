@@ -42,6 +42,10 @@
 
 }
 
+.burguer-close {
+        display: none;
+}
+
 #btn-menu:checked+.nav-header {
 
     margin-top: 0;
