@@ -209,7 +209,7 @@ textarea:not(:placeholder-shown):invalid~.icon-invalid {
 .button-form {
     width: 25%;
     font-size: 1em;
-    font-weight: 200;
+    font-weight: 500;
     padding: 10px;
     margin: 15px;
     background-color: var(--old-pink);
