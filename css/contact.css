@@ -110,6 +110,7 @@ textarea {
     outline: none;
     resize: none;
     overflow: hidden;
+    padding-right: 50px;
 }
 
 input:focus {
@@ -124,10 +125,16 @@ input:focus {
 
 }
 
-.form-control {
-    margin-bottom: 15px;
-    flex-grow: 1;
+.input-wrapper {
+
     position: relative;
+}
+
+.form-icon {
+    position: absolute;
+    right: 10px;
+    top: 17px;
+    font-size: 1.2em;
 }
 
 .input-name .control-form:nth-of-type(1) {
@@ -185,12 +192,6 @@ input:focus {
 
     }
 
-    input,
-    textarea {
-        padding: 14px;
-        font-size: 20px;
-        margin-top: 15px;
-    }
 
     .button-form {
         width: 20%;

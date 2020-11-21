@@ -32,7 +32,7 @@
 .aboutme-name {
     font-family: 'Pacifico', cursive;
     font-size: 3em;
-    text-shadow: 5px 5px var(--dark-grey);
+    text-shadow: 5px 5px var(--iron-grey);
     margin-top: 0;
     margin-bottom: 6px;
     color: var(--flamingo);

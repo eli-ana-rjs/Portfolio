@@ -41,8 +41,7 @@
 
 .skill {
     color: rgb(24, 23, 23);
-    background-color: var(--light-grey);
-    border: 1px solid var(--border-grey);
+    border: 1px solid var(--dark-grey);
     border-radius: 8px;
     max-width: 250px;
     width: calc(50% - 40px);
@@ -52,11 +51,13 @@
 }
 
 .skill:hover {
-    -webkit-transform: scale(1.1);
+    /* -webkit-transform: scale(1.1); */
+    -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+    box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
 }
 
 .grid-item {
-    background-color: var(--light-grey);
+    background-color: var(--grey);
 }
 
 .grid-title {
@@ -66,7 +67,7 @@
 
 .skill-icon {
     font-size: 2.7em;
-    color: var(--flamingo);
+    color: var(--iron-grey);
     -webkit-text-stroke: 0.15px var(--dark-grey);
     margin-top: 24px;
     margin-bottom: 20px;
