@@ -22,7 +22,7 @@
 
 ### Ya te he contado de que trata el proyecto! A continuación te invito a ver mi portfolio. 😀
 
-### Puedes verlo [aquí](elianarojas.github.io/portfolio/) o hacer click en el siguiente [link](https://quirky-gates-b52694.netlify.app).
+### Puedes verlo en la github pages,[click aquí](elianarojas.github.io/portfolio/), o hacer click en el siguiente [link](https://quirky-gates-b52694.netlify.app).
 
 <br />
 
